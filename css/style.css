@@ -1,6 +1,7 @@
 .header {
   background-color: #fff;
   width: 100%;
+  position: fixed;
 }
 
 .inner {
@@ -19,7 +20,7 @@
   margin-left: 30px;
   font-size: 2.5em;
   cursor: pointer;
-  color: #74cfae;
+  color: #333;
 }
 
 .btn-contact {
@@ -30,11 +31,11 @@
   padding: 14px 12px;
   float: right;
   margin-right: 30px;
+  transition: color 0.3s;
 }
 
 .btn-contact:hover {
   color: #333;
-  transition: color 0.3s;
 }
 
 .body {
@@ -99,19 +100,20 @@
 
 .work-title {
   font-size: 24px;
-  padding: 40px;
   font-family: Raleway;
 }
 
 .work-img-flex {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .work-img {
   opacity: 0.7;
   cursor: pointer;
   float: left;
+  transition: 0.3s;
 }
 
 .work-img:hover {
@@ -126,9 +128,13 @@
   margin-right: 0;
 }
 
+.work-img-flex a:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
 .work-text-flex {
   display: flex;
-  margin-top: 10px;
+  margin-top: 90px;
   justify-content: center;
   align-items: center;
 }
@@ -145,16 +151,17 @@
   text-decoration: none;
   color: #fff;
   background-color: #74cfae;
+  transition: color 0.3s;
 }
 
 .btn-Email:hover {
   color: #333;
-  transition: color 0.3s;
 }
 
 .read-flex {
   display: flex;
   justify-content: center;
+  padding-top: 70px;
 }
 
 .read-content {
@@ -163,7 +170,7 @@
 
 .read-title {
   color: #fff;
-  padding-bottom: 70px;
+  font-size: 22px;
 }
 
 .read {
@@ -204,11 +211,11 @@
   width: 185px;
   padding: 25px 0;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .sns-icon:hover {
   background-color: #fff;
-  transition: background-color 0.3s;
 }
 
 .footer {
