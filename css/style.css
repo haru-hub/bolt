@@ -2,6 +2,10 @@
   background-color: #fff;
   width: 100%;
   position: fixed;
+  z-index: 1;
+  height: 70px;
+  left: 0;
+  top: 0;
 }
 
 .inner {
@@ -47,6 +51,10 @@
   width: 100%;
 }
 
+.main {
+  padding-top: 70px;
+}
+
 .title-inner {
   padding: 250px 0;
 }
@@ -55,13 +63,13 @@
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  margin-bottom: 20px;
   font-family: Raleway;
 }
 
 .font30 {
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
 .try {
@@ -77,7 +85,6 @@
 
 .try-title {
   font-size: 24px;
-  margin-bottom: 35px;
   color: #fff;
   font-family: Raleway;
 }
@@ -87,6 +94,7 @@
   color: #fff;
   line-height: 28px;
   width: 780px;
+  margin-top: 35px;
 }
 
 .work {
@@ -109,27 +117,29 @@
   margin-top: 40px;
 }
 
-.work-img {
+.work-img-flex a {
   opacity: 0.7;
-  cursor: pointer;
-  float: left;
   transition: 0.3s;
 }
 
-.work-img:hover {
+.work-img {
+  float: left;
+}
+
+.work-img-flex a:hover {
   opacity: 1;
 }
 
-.work-img-flex a:nth-child(-n+6) {
-  margin: 0 100px 80px 0;
+.work-img-flex a:nth-child(n) {
+  margin: 80px 0 0 100px;
 }
 
-.work-img-flex a:nth-child(3n) {
-  margin-right: 0;
+.work-img-flex a:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-.work-img-flex a:nth-child(n+4) {
-  margin-bottom: 0;
+.work-img-flex a:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .work-text-flex {
@@ -160,8 +170,7 @@
 
 .read-flex {
   display: flex;
-  justify-content: center;
-  padding-top: 70px;
+  margin-top: 70px;
 }
 
 .read-content {
@@ -210,7 +219,6 @@
   color: #74cfae;
   width: 185px;
   padding: 25px 0;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 
