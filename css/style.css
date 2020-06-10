@@ -117,16 +117,13 @@
   margin-top: 40px;
 }
 
-.work-img-flex a {
+.work-img {
+  float: left;
   opacity: 0.7;
   transition: 0.3s;
 }
 
-.work-img {
-  float: left;
-}
-
-.work-img-flex a:hover {
+.work-img:hover {
   opacity: 1;
 }
 
@@ -174,7 +171,11 @@
 }
 
 .read-content {
-  margin-right: 180px;
+  margin-left: 180px;
+}
+
+.read-content:first-child {
+  margin-left: 36px;
 }
 
 .read-title {
@@ -191,13 +192,11 @@
   padding: 70px 0 100px 0;
 }
 
-.read-img {
-  padding-bottom: 15px;
-}
 
 .read-text {
   color: #fff;
   font-size: 16px;
+  margin-top: 15px;
 }
 
 .sns {
