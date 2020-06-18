@@ -8,12 +8,15 @@ a {
   display: inline-block;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 .header {
   background-color: #fff;
   width: 100%;
   position: fixed;
-  z-index: 1;
-  height: 70px;
+  z-index: 100;
   left: 0;
   top: 0;
 }
@@ -34,7 +37,6 @@ a {
   font-size: 2.5em;
   cursor: pointer;
   color: #333;
-  margin-left: 30px;
 }
 
 .header-inner a {
@@ -45,12 +47,10 @@ a {
   padding: 14px 12px;
   float: right;
   transition: color 0.3s;
-  margin-right: 30px;
 }
 
 .header-inner a:hover {
   color: #333;
-  transition: color 0.3s;
 }
 
 .title {
@@ -128,15 +128,15 @@ a {
 
 .work-img-flex-list {
   margin: 80px 0 0 100px;
-  float: left;
-  opacity: 0.7;
-  transition: 0.3s;
-  height: 300px;
 }
 
-.work-img-flex-list:hover {
-  opacity: 1;
+.work-img-flex li a {
+  opacity: 0.7;
   transition: 0.3s;
+}
+
+.work-img-flex li a:hover {
+  opacity: 1;
 }
 
 .work-img-flex-list:nth-child(3n+1) {
@@ -166,7 +166,6 @@ a {
 
 .btn-Email:hover {
   color: #333;
-  transition: color 0.3s;
 }
 
 .work-text-flex .work-text {
@@ -223,15 +222,16 @@ a {
 }
 
 .sns-flex-icon {
-  transition: background-color 0.3s;
-  padding: 25px 0;
-  height: 40px;
   width: 185px;
-  cursor: pointer;
 }
 
-.sns-flex-icon:hover {
+.sns-flex li a:hover {
   background-color: #fff;
+}
+
+.sns-flex li a {
+  padding: 25px 0;
+  width: 185px;
   transition: background-color 0.3s;
 }
 
@@ -372,10 +372,10 @@ a {
   }
 
   .sns-flex-icon {
-    width: auto;
+    width: 100%;
   }
 
-  .sns-content {
+  .sns-flex li a  {
     width: 100%;
   }
 }
