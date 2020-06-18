@@ -254,7 +254,7 @@ body {
     display: none;
   }
 
-  .Toggle {
+  .toggle {
     position: relative;
     width: 30px;
     height: 18px;
@@ -265,7 +265,7 @@ body {
     cursor: pointer;
   }
 
-  .Toggle span { 
+  .toggle span { 
     position: absolute;
     right: 12px;
     height: 3px;
@@ -274,15 +274,15 @@ body {
     display: inline-block;
   }
 
-  .Toggle span:nth-of-type(1) {
+  .toggle span:nth-of-type(1) {
     top: 9px;
   }
 
-  .Toggle span:nth-of-type(2) {
+  .toggle span:nth-of-type(2) {
     top: 18px;
   }
 
-  .Toggle span:nth-of-type(3) {
+  .toggle span:nth-of-type(3) {
     top: 27px;
   }
 
@@ -292,6 +292,7 @@ body {
 
   .try-inner {
     display: block;
+    padding-bottom: 25px;
   }
 
   .try-title {
@@ -311,8 +312,12 @@ body {
     margin: 0;
   }
 
-  .work-img-flex a:nth-child(4n) {
+  .work-img-flex a:nth-child(3n+1) {
     margin-top: 80px;
+  }
+
+  .work-img-flex a:first-child {
+    margin-top: 0;
   }
 
   .work-text-flex {
@@ -364,7 +369,7 @@ body {
 
 
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
   .inner {
     width: 97%;
   }
@@ -392,10 +397,13 @@ body {
     margin: 0;
   }
 
-  .work-img-flex a:nth-child(4n) {
+  .work-img-flex a:nth-child(3n+1) {
     margin-top: 80px;
   }
 
+  .work-img-flex a:first-child {
+    margin-top: 0;
+  }
 
   .work-text-flex {
     margin-top: 80px;
@@ -431,12 +439,4 @@ body {
   .read-content:first-child {
     margin-top: 0;
   }
-
 }
-
-
-
-@media screen and (min-width:1200px) {
-
-}
-
